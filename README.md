@@ -1,4 +1,6 @@
-sysadmin-install-tools
+misc-scripts
 ======================
 
-These tools will assist with quickly deploying information on new servers.
+Miscellaneous tools and scripts.
+
+No license, however I'm not responsible if you blow your servers up.
