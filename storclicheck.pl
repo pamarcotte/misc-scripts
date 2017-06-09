@@ -15,7 +15,7 @@ my @savedirs = (
 my $ua = LWP::UserAgent->new;
 my $response = $ua->get($storcliurl);
 
-my ($url) = ($response->decoded_content =~ /(http:\/\/docs\.avagotech\.com\/docs\/[\d\.]+_StorCLI\.zip)/);
+my ($url) = ($response->decoded_content =~ /(http:\/\/docs\.\S+\.com\/docs\/[\d\.]+_StorCLI\.zip)/);
 my ($filename) = ($url =~ /([\d\.]+_StorCLI\.zip)/);
 
 die "Couldn't retrieve url or filename.\n" if (!$url || !$filename);
